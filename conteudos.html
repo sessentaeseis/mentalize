@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Conteúdos</title>
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+</head>
+<body onload="setActiveNav(); filterContentByMood()">
+<div class="app">
+
+    <aside class="sidebar">
+
+    <div class="sidebar-top">
+        <img src="img/logo.png" class="logo">
+        <span>Mentalize</span>
+    </div>
+
+    <nav class="sidebar-nav">
+        <a href="dashboard.html" class="nav-item" id="nav-dashboard">Dashboard</a>
+        <a href="historico.html" class="nav-item" id="nav-historico">Histórico</a>
+        <a href="conteudos.html" class="nav-item" id="nav-conteudos">Conteúdos</a>
+        <a href="perfil.html" class="nav-item" id="nav-perfil">Perfil</a>
+    </nav>
+
+    <div class="sidebar-bottom">
+        <button onclick="logout()" class="logout-btn">Sair</button>
+    </div>
+
+</aside>
+
+<main class="main">
+
+    <h2>Conteúdos Recomendados</h2>
+
+    <div class="app-grid">
+
+        <div class="app-card">
+            <span class="tag">Ansiedade</span>
+
+            <h3>Respiração 4-4-4</h3>
+
+            <p>
+                Técnica prática para reduzir ansiedade rapidamente.
+                Ajuda a desacelerar o ritmo cardíaco e estabilizar a respiração.
+            </p>
+
+            <a href="#" class="btn-ghost">Ler mais</a>
+        </div>
+
+        <div class="app-card">
+            <span class="tag">Foco</span>
+            <h3>Meditação guiada curta</h3>
+            <p>
+                Sessão de 5 minutos para acalmar pensamentos e melhorar concentração.
+                Ideal para pausas durante estudo ou trabalho intenso.
+            </p>
+            <a href="#" class="btn-ghost">Ler mais</a>
+        </div>
+
+        <div class="app-card">
+            <span class="tag">Autoconhecimento</span>
+            <h3>Journaling estruturado</h3>
+            <p>
+                Escrever sobre o dia ajuda a organizar emoções e identificar padrões.
+                Use perguntas simples para guiar a reflexão.
+            </p>
+            <a href="#" class="btn-ghost">Ler mais</a>
+        </div>
+
+        <div class="app-card">
+            <span class="tag">Energia</span>
+            <h3>Pausa consciente</h3>
+            <p>
+                Desconecte-se por alguns minutos, respire profundamente e reduza estímulos.
+                Pequenas pausas aumentam produtividade e bem-estar.
+            </p>
+            <a href="#" class="btn-ghost">Ler mais</a>
+        </div>
+
+    </div>
+
+</main>
+
+</div>
+
+</body>
+</html>

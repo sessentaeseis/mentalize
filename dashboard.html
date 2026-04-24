@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+</head>
+<body onload="setActiveNav(); loadDashboard()">
+
+<div class="app">
+
+<aside class="sidebar">
+
+    <div class="sidebar-top">
+        <img src="img/logo.png" class="logo">
+        <span>Mentalize</span>
+    </div>
+
+    <nav class="sidebar-nav">
+        <a href="dashboard.html" class="nav-item" id="nav-dashboard">Dashboard</a>
+        <a href="historico.html" class="nav-item" id="nav-historico">Histórico</a>
+        <a href="conteudos.html" class="nav-item" id="nav-conteudos">Conteúdos</a>
+        <a href="perfil.html" class="nav-item" id="nav-perfil">Perfil</a>
+    </nav>
+
+    <div class="sidebar-bottom">
+        <button onclick="logout()" class="logout-btn">Sair</button>
+    </div>
+
+</aside>
+
+  <main class="main">
+
+    <h2>Olá, <span id="userName"></span></h2>
+
+    <div class="app-grid">
+
+        <div class="app-card">
+            <h3>Como você está agora?</h3>
+
+            <div class="mood-buttons">
+
+                <button onclick="selectMood('feliz')" data-tooltip="Você está se sentindo bem, positivo ou satisfeito.">😊</button>
+
+                <button onclick="selectMood('neutro')" data-tooltip="Estado estável, sem grandes variações emocionais.">😐</button>
+
+                <button onclick="selectMood('triste')" data-tooltip="Sensação de desânimo, tristeza ou baixa energia.">😞</button>
+
+                <button onclick="selectMood('ansioso')" data-tooltip="Agitação, preocupação ou tensão elevada.">😰</button>
+
+            </div>
+
+            <label>Intensidade</label>
+            <input type="range" min="1" max="5" id="intensity">
+
+            <label>Contexto</label>
+            <select id="context">
+                <option>Trabalho</option>
+                <option>Estudo</option>
+                <option>Pessoal</option>
+                <option>Social</option>
+            </select>
+
+            <input id="note" placeholder="Quer adicionar algo? (opcional)">
+
+            <button class="btn-primary" onclick="saveMood()">Registrar</button>
+        </div>
+
+        <div class="app-card">
+            <h3>Sugestão Para Agora</h3>
+            <p id="recommendation">Registre seu estado para receber sugestões.</p>
+        </div>
+
+        <div class="app-card">
+            <h3>Resumo rápido</h3>
+            <p id="summary"></p>
+            <p id="streak"></p>
+        </div>
+
+        <div class="app-card">
+            <h3>Padrão Emocional</h3>
+            <canvas id="chart"></canvas>
+        </div>
+
+        <div class="app-card">
+            <h3>Últimos Registros</h3>
+            <ul id="recentMoods" class="app-list"></ul>
+        </div>
+
+        <div class="app-card">
+            <h3>Calendário Emocional</h3>
+            <div id="moodCalendar" class="calendar-grid"></div>
+        </div>
+
+        <div class="app-card">
+            <h3>Recomendações</h3>
+            <p id="historyRecommendation"></p>
+        </div>
+
+        <div class="app-card">
+            <h3>Insight</h3>
+            <p id="insight"></p>
+        </div>
+    </div>
+
+</main>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

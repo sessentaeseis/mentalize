@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Mentalize | Acesso</title>
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+</head>
+<body>
+
+<div class="auth-container">
+
+    <div class="auth-left">
+        <div>
+            <h1>Mentalize</h1>
+            <p>Equilibre, Mentalize.</p>
+        </div>
+    </div>
+
+    <div class="auth-right">
+        <div class="auth-box">
+            <a href="index.html" class="back-link">← Voltar</a>
+            <div class="auth-tabs">
+                <button id="tabLogin" class="active" onclick="switchTab('login')">Entrar</button>
+                <button id="tabRegister" onclick="switchTab('register')">Criar conta</button>
+            </div>
+
+            <div id="loginForm" class="auth-form">
+                <input id="loginEmail" placeholder="Email">
+                <input id="loginPass" type="password" placeholder="Senha">
+                <button class="btn-primary" onclick="login()">Entrar</button>
+            </div>
+
+            <div id="registerForm" class="auth-form hidden">
+                <input id="regName" placeholder="Nome">
+                <input id="regEmail" placeholder="Email">
+                <input id="regPass" type="password" placeholder="Senha">
+                <button class="btn-primary" onclick="register()">Criar conta</button>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>

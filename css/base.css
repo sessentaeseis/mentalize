@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+:root {
+    --primary: #7c3aed;
+    --bg: #0b0b10;
+    --bg-soft: #111116;
+    --card: #16161c;
+    --border: #1f1f2e;
+    --text: #ffffff;
+    --muted: #9ca3af;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+}
+
+.btn-primary {
+    background: var(--primary);
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    transition: 0.2s;
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+}
+

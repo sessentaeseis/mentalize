@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mentalize</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/landing.css">
@@ -14,9 +14,9 @@
 <header class="landing-navbar">
     <span class="landing-logo"><img src="img/logo.png" alt="">Mentalize</span>
     <nav class="landing-nav">
-        <a href="#">Produto</a>
-        <a href="#">Recursos</a>
-        <a href="#">Sobre</a>
+        <a href="#produto">Produto</a>
+        <a href="#recursos">Recursos</a>
+        <a href="#sobre">Sobre</a>
     </nav>
     <a href="login.html" class="btn-primary">Entrar</a>
 </header>
@@ -24,19 +24,51 @@
 <main>
     <section class="landing-hero">
         <div class="landing-hero-text">
-            <h1>Organize sua mente,<br> melhore seu dia a dia.</h1>
+            <span class="eyebrow">Bem-estar mental com acompanhamento simples</span>
+            <h1>Mentalize</h1>
             <p>Acompanhe seu estado emocional, receba recomendações inteligentes e construa hábitos mais saudáveis com consistência.</p>
             <div class="hero-actions">
                 <a href="login.html" class="btn-primary">Começar agora</a>
-                <a href="#" class="btn-ghost">Ver como funciona</a>
+                <a href="#recursos" class="btn-ghost">Ver recursos</a>
             </div>
         </div>
         <div class="landing-hero-visual">
-            <img src="img/hero-illustration.svg" alt="Ilustração Mentalize" />
+            <div class="visual-panel" aria-label="Prévia do painel Mentalize">
+                <div class="visual-header">
+                    <div class="visual-title">
+                        <strong>Resumo da semana</strong>
+                        <span>7 registros emocionais</span>
+                    </div>
+                    <span class="score-badge">+18% clareza</span>
+                </div>
+                <div class="mood-strip">
+                    <div class="mood-pill"><strong>😊</strong><span>Feliz</span></div>
+                    <div class="mood-pill"><strong>😐</strong><span>Neutro</span></div>
+                    <div class="mood-pill"><strong>😞</strong><span>Triste</span></div>
+                    <div class="mood-pill"><strong>😰</strong><span>Ansioso</span></div>
+                </div>
+                <div class="chart-bars" aria-hidden="true">
+                    <i class="bar-1"></i>
+                    <i class="bar-2"></i>
+                    <i class="bar-3"></i>
+                    <i class="bar-4"></i>
+                    <i class="bar-5"></i>
+                    <i class="bar-6"></i>
+                    <i class="bar-7"></i>
+                </div>
+                <div class="mini-card">
+                    <div class="mini-row">
+                        <strong>Recomendação de hoje</strong>
+                        <span>4 min</span>
+                    </div>
+                    <p>Respiração guiada para desacelerar antes de voltar à rotina.</p>
+                    <div class="progress-line"><span></span></div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="landing-benefits">
+    <section class="landing-benefits" id="produto">
         <div class="benefit-card">
             <div>
                 <h3>Fácil de usar</h3>
@@ -57,30 +89,43 @@
         </div>
     </section>
 
-    <section class="landing-section landing-problem">
+    <section class="landing-section landing-problem" id="sobre">
         <div class="problem-content">
-            <h2>Rotina acelerada, mente sobrecarregada</h2>
-            <p>Entre estudos, trabalho e responsabilidades, acompanhar o próprio bem-estar acaba ficando em segundo plano. A Mentalize existe para resolver isso de forma simples.</p>
-            <!-- público alvo removido para visual mais limpo -->
+            <div>
+                <h2>Rotina acelerada, mente sobrecarregada</h2>
+                <p>Entre estudos, trabalho e responsabilidades, acompanhar o próprio bem-estar acaba ficando em segundo plano. A Mentalize existe para resolver isso de forma simples.</p>
+            </div>
+            <ul class="problem-list">
+                <li>Registro emocional em poucos segundos</li>
+                <li>Histórico visual para perceber padrões</li>
+                <li>Conteúdos práticos para cada momento</li>
+            </ul>
         </div>
     </section>
 
-    <section class="landing-section landing-features">
-        <h2>Como a Mentalize te ajuda</h2>
+    <section class="landing-section landing-features" id="recursos">
+        <div class="section-heading">
+            <h2>Como a Mentalize te ajuda</h2>
+            <p>Ferramentas diretas para transformar percepção emocional em rotina.</p>
+        </div>
         <div class="features-grid">
             <div class="feature-card">
+                <span class="feature-icon">01</span>
                 <h3>Registro rápido e contínuo</h3>
                 <p>Em poucos segundos você registra como está se sentindo. Sem formulários longos ou processos complexos.</p>
             </div>
             <div class="feature-card">
+                <span class="feature-icon">02</span>
                 <h3>Sugestões que fazem sentido</h3>
                 <p>Em vez de conteúdo genérico, o sistema sugere atividades com base no seu estado atual.</p>
             </div>
             <div class="feature-card">
+                <span class="feature-icon">03</span>
                 <h3>Visualização clara da evolução</h3>
                 <p>Identifique padrões emocionais e entenda o que impacta seu bem-estar ao longo do tempo.</p>
             </div>
             <div class="feature-card">
+                <span class="feature-icon">04</span>
                 <h3>Conteúdo direto ao ponto</h3>
                 <p>Exercícios e práticas curtas que cabem na sua rotina, sem depender de muito tempo livre.</p>
             </div>
@@ -88,21 +133,28 @@
     </section>
 
     <section class="landing-section landing-platform">
-        <h2>Uma plataforma completa</h2>
+        <div class="section-heading">
+            <h2>Uma plataforma completa</h2>
+            <p>Do primeiro registro ao acompanhamento de longo prazo.</p>
+        </div>
         <div class="features-grid">
             <div class="feature-card">
+                <span class="feature-icon">•</span>
                 <h3>Registro emocional</h3>
                 <p>Acompanhe seu humor diariamente com poucos cliques.</p>
             </div>
             <div class="feature-card">
+                <span class="feature-icon">•</span>
                 <h3>Recomendações inteligentes</h3>
                 <p>Receba sugestões com base no seu estado emocional.</p>
             </div>
             <div class="feature-card">
+                <span class="feature-icon">•</span>
                 <h3>Histórico completo</h3>
                 <p>Visualize padrões e evolução ao longo do tempo.</p>
             </div>
             <div class="feature-card">
+                <span class="feature-icon">•</span>
                 <h3>Conteúdos guiados</h3>
                 <p>Meditações e exercícios práticos para o dia a dia.</p>
             </div>
@@ -117,15 +169,10 @@
             <span>Mentalize</span>
         </div>
         <nav class="footer-nav">
-            <a href="#">Produto</a>
-            <a href="#">Recursos</a>
-            <a href="#">Sobre</a>
+            <a href="#produto">Produto</a>
+            <a href="#recursos">Recursos</a>
+            <a href="#sobre">Sobre</a>
         </nav>
-        <div class="footer-social">
-            <a href="#" title="Instagram">📸</a>
-            <a href="#" title="Twitter">🐦</a>
-            <a href="#" title="LinkedIn">💼</a>
-        </div>
     </div>
     <div class="footer-bottom">
         <span>&copy; 2026 Mentalize. Todos os direitos reservados.</span>

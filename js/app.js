@@ -113,6 +113,9 @@ function loadLineChart() {
 // =====================
 function selectMood(mood) {
     selectedMood = mood;
+    document.querySelectorAll(".mood-buttons button").forEach(button => {
+        button.classList.toggle("active", button.dataset.mood === mood);
+    });
     updateRecommendation(mood);
 }
 
@@ -469,7 +472,7 @@ function filterContentByMood() {
 
     let lastMood = moods[moods.length - 1].mood;
 
-    document.querySelectorAll(".app-card").forEach(card => {
+    document.querySelectorAll(".content-card").forEach(card => {
         if (card.innerText.toLowerCase().includes(lastMood)) {
             card.style.borderColor = "#7c3aed";
         }

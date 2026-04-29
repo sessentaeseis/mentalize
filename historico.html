@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Histórico</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/app.css">
@@ -31,10 +34,16 @@
 
     <main class="main">
 
-    <h2>Histórico emocional</h2>
+    <div class="page-header">
+        <div>
+            <p class="page-kicker">Linha do tempo</p>
+            <h2>Histórico emocional</h2>
+            <p class="page-subtitle">Revise seus registros recentes e perceba como contexto, intensidade e humor se conectam.</p>
+        </div>
+    </div>
 
     <div class="app-card history-card">
-        <div id="historyList"></div>
+        <div id="historyList" class="history-scroll"></div>
     </div>
 
 </main>

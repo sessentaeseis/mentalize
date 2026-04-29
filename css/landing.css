@@ -37,6 +37,22 @@
 }
 
 .landing-hero {
+.btn-ghost {
+    border: 1px solid var(--border);
+    padding: 10px 16px;
+    border-radius: 8px;
+    color: var(--muted);
+    text-decoration: none;
+    background: transparent;
+    font-weight: 500;
+    transition: color 0.18s, border-color 0.18s, background 0.18s, transform 0.18s;
+}
+.btn-ghost:hover {
+    color: var(--primary);
+    border-color: var(--primary);
+    background: #7c3aed11;
+    transform: translateY(-2px) scale(1.04);
+}
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -69,33 +85,31 @@
 }
 
 .landing-hero p {
-    color: var(--muted);
-    margin-bottom: 25px;
-    max-width: 600px;
-}
-
-.hero-actions {
-    display: flex;
-    gap: 10px;
-}
-
-.btn-ghost {
+.feature-card {
+    background: linear-gradient(160deg, #14141c, #1a1a24);
+    padding: 28px 22px;
+    border-radius: 14px;
     border: 1px solid var(--border);
-    padding: 10px 16px;
-    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 220px;
+    transition: transform 0.22s cubic-bezier(.4,2,.6,1), box-shadow 0.22s, border-color 0.22s;
+}
+.feature-card h3 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.feature-card p {
+    font-size: 14px;
     color: var(--muted);
-    text-decoration: none;
-    transition: ease 0.4s;
+    line-height: 1.5;
 }
-
-.btn-ghost:hover {
-    color: #c4b5fd;
-    border-color: #b7ace2;
+.feature-card:hover {
+    transform: translateY(-10px) scale(1.04);
+    box-shadow: 0 8px 32px #7c3aed33;
+    border-color: var(--primary);
 }
-
-.btn-primary {
-    transition: ease 0.4s;
-    border: 3px solid #b7ace2;
     font-weight: bold;
 }
 

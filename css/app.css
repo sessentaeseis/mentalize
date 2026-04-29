@@ -1,3 +1,158 @@
+/* Dashboard Modern Styles */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 32px;
+    margin-bottom: 32px;
+}
+.dashboard-card {
+    background: var(--card, #16161c);
+    border-radius: 16px;
+    box-shadow: 0 4px 24px #0004;
+    padding: 32px 28px 24px 28px;
+    border: 1px solid var(--border, #1f1f2e);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-width: 0;
+}
+.dashboard-card h3 {
+    margin-bottom: 10px;
+    color: var(--primary, #7c3aed);
+    font-size: 1.3rem;
+}
+.mood-buttons {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+.mood-buttons button {
+    background: var(--bg-soft, #111116);
+    border: 1.5px solid var(--border, #1f1f2e);
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    font-size: 1.3rem;
+    color: var(--text, #fff);
+    cursor: pointer;
+    transition: border 0.18s, background 0.18s, transform 0.18s;
+}
+.mood-buttons button:hover, .mood-buttons button:focus {
+    border: 1.5px solid var(--primary, #7c3aed);
+    background: #7c3aed22;
+    transform: scale(1.08);
+}
+.dashboard-card input[type="range"] {
+    width: 100%;
+    margin: 8px 0 12px 0;
+}
+.dashboard-card select, .dashboard-card input[type="text"], .dashboard-card input[type="password"], .dashboard-card input[type="email"] {
+    background: var(--bg-soft, #111116);
+    border: 1px solid var(--border, #1f1f2e);
+    border-radius: 8px;
+    padding: 10px 12px;
+    color: var(--text, #fff);
+    font-size: 1rem;
+    margin-bottom: 8px;
+    outline: none;
+    transition: border 0.18s;
+}
+.dashboard-card select:focus, .dashboard-card input:focus {
+    border: 1.5px solid var(--primary, #7c3aed);
+}
+/* Login Modern Styles */
+.login-bg {
+    min-height: 100vh;
+    background: linear-gradient(120deg, #181825 0%, #232136 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+.login-card {
+    background: var(--card, #16161c);
+    border-radius: 18px;
+    box-shadow: 0 8px 32px #0005;
+    padding: 44px 36px 32px 36px;
+    min-width: 340px;
+    max-width: 95vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--border, #1f1f2e);
+}
+.login-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 18px;
+}
+.login-logo h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary, #7c3aed);
+    margin: 0;
+}
+.login-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+.login-tabs button {
+    background: none;
+    border: none;
+    color: var(--muted, #9ca3af);
+    font-size: 1.1rem;
+    padding: 8px 18px;
+    border-radius: 8px 8px 0 0;
+    cursor: pointer;
+    transition: background 0.18s, color 0.18s;
+}
+.login-tabs button.active, .login-tabs button:hover {
+    background: var(--primary, #7c3aed);
+    color: #fff;
+}
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 18px;
+    width: 100%;
+}
+.login-form input {
+    background: var(--bg-soft, #111116);
+    border: 1px solid var(--border, #1f1f2e);
+    border-radius: 8px;
+    padding: 12px 14px;
+    color: var(--text, #fff);
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.18s;
+}
+.login-form input:focus {
+    border: 1.5px solid var(--primary, #7c3aed);
+}
+.back-link {
+    color: var(--muted, #9ca3af);
+    margin-top: 10px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    font-size: 0.98rem;
+    transition: color 0.18s;
+}
+.back-link:hover {
+    color: var(--primary, #7c3aed);
+}
+.hidden {
+    display: none !important;
+}
 .auth-container {
     display: flex;
     height: 100vh;

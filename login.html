@@ -9,42 +9,32 @@
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 </head>
 <body>
-
-<div class="auth-container">
-
-    <div class="auth-left">
-        <div>
-            <h1>Mentalize</h1>
-            <p>Equilibre, Mentalize.</p>
-        </div>
-    </div>
-
-    <div class="auth-right">
-        <div class="auth-box">
-            <a href="index.html" class="back-link">← Voltar</a>
-            <div class="auth-tabs">
+<div class="login-bg">
+    <div class="login-container">
+        <div class="login-card">
+            <div class="login-logo">
+                <img src="img/logo.png" alt="Mentalize" style="height:40px; margin-bottom:10px;">
+                <h1>Mentalize</h1>
+            </div>
+            <div class="login-tabs">
                 <button id="tabLogin" class="active" onclick="switchTab('login')">Entrar</button>
                 <button id="tabRegister" onclick="switchTab('register')">Criar conta</button>
             </div>
-
-            <div id="loginForm" class="auth-form">
-                <input id="loginEmail" placeholder="Email">
-                <input id="loginPass" type="password" placeholder="Senha">
+            <div id="loginForm" class="login-form">
+                <input id="loginEmail" placeholder="Email" autocomplete="username">
+                <input id="loginPass" type="password" placeholder="Senha" autocomplete="current-password">
                 <button class="btn-primary" onclick="login()">Entrar</button>
             </div>
-
-            <div id="registerForm" class="auth-form hidden">
+            <div id="registerForm" class="login-form hidden">
                 <input id="regName" placeholder="Nome">
-                <input id="regEmail" placeholder="Email">
-                <input id="regPass" type="password" placeholder="Senha">
+                <input id="regEmail" placeholder="Email" autocomplete="username">
+                <input id="regPass" type="password" placeholder="Senha" autocomplete="new-password">
                 <button class="btn-primary" onclick="register()">Criar conta</button>
             </div>
-
+            <a href="index.html" class="back-link">← Voltar</a>
         </div>
     </div>
-
 </div>
-
 <script src="js/app.js"></script>
 </body>
 </html>

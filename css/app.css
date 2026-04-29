@@ -5,7 +5,7 @@
 }
 
 .sidebar {
-    background: rgba(255, 255, 255, 0.82);
+    background: rgba(18, 21, 22, 0.86);
     border-right: 1px solid var(--border);
     display: flex;
     flex-direction: column;
@@ -48,14 +48,14 @@
 }
 
 .nav-item:hover {
-    background: rgba(109, 93, 252, 0.08);
-    color: var(--primary);
+    background: rgba(22, 184, 166, 0.09);
+    color: #70e4d8;
     transform: translateX(2px);
 }
 
 .nav-item.active {
-    background: linear-gradient(135deg, rgba(109, 93, 252, 0.16), rgba(31, 182, 166, 0.10));
-    color: var(--primary-strong);
+    background: linear-gradient(135deg, rgba(48, 32, 216, 0.24), rgba(22, 184, 166, 0.12));
+    color: #ece9ff;
 }
 
 .sidebar-bottom {
@@ -63,7 +63,7 @@
 }
 
 .logout-btn {
-    background: #ffffff;
+    background: rgba(21, 24, 25, 0.74);
     border: 1px solid var(--border);
     border-radius: 14px;
     color: var(--muted-strong);
@@ -93,7 +93,7 @@
 }
 
 .page-kicker {
-    color: var(--primary);
+    color: #70e4d8;
     font-size: 13px;
     font-weight: 900;
     margin-bottom: 6px;
@@ -185,10 +185,10 @@ h2 {
 }
 
 .mood-buttons button {
-    background: #ffffff;
+    background: rgba(20, 23, 24, 0.78);
     border: 1px solid var(--border);
     border-radius: 16px;
-    box-shadow: 0 8px 18px rgba(31, 41, 55, 0.05);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.16);
     color: var(--text);
     cursor: pointer;
     font-size: 26px;
@@ -199,13 +199,13 @@ h2 {
 
 .mood-buttons button:hover,
 .mood-buttons button.active {
-    border-color: rgba(109, 93, 252, 0.5);
-    box-shadow: 0 12px 24px rgba(109, 93, 252, 0.13);
+    border-color: rgba(22, 184, 166, 0.44);
+    box-shadow: 0 12px 24px rgba(22, 184, 166, 0.12);
     transform: translateY(-2px);
 }
 
 .mood-buttons button::after {
-    background: var(--text);
+    background: #0e1112;
     border-radius: 10px;
     bottom: -46px;
     box-shadow: var(--shadow-soft);
@@ -240,7 +240,7 @@ h2 {
 .app-card select,
 .form-group input,
 .login-form input {
-    background: #ffffff;
+    background: rgba(18, 21, 22, 0.82);
     border: 1px solid var(--border);
     border-radius: 12px;
     color: var(--text);
@@ -255,8 +255,8 @@ h2 {
 .app-card select:focus,
 .form-group input:focus,
 .login-form input:focus {
-    border-color: rgba(109, 93, 252, 0.55);
-    box-shadow: 0 0 0 4px rgba(109, 93, 252, 0.10);
+    border-color: rgba(22, 184, 166, 0.55);
+    box-shadow: 0 0 0 4px rgba(22, 184, 166, 0.10);
 }
 
 input[type="range"] {
@@ -271,7 +271,7 @@ input[type="range"] {
 }
 
 .app-list li {
-    background: #ffffff;
+    background: rgba(18, 21, 22, 0.74);
     border: 1px solid var(--border);
     border-radius: 12px;
     padding: 10px 12px;
@@ -296,7 +296,7 @@ input[type="range"] {
 .calendar-day.neutro { background: rgba(100, 116, 139, 0.14); }
 .calendar-day.triste { background: rgba(59, 130, 246, 0.15); }
 .calendar-day.ansioso { background: rgba(246, 166, 35, 0.18); }
-.calendar-day.empty { background: #eef2f7; }
+.calendar-day.empty { background: rgba(39, 51, 64, 0.46); }
 
 .content-card {
     display: flex;
@@ -306,8 +306,8 @@ input[type="range"] {
 .content-visual {
     align-items: end;
     background:
-        linear-gradient(135deg, rgba(109, 93, 252, 0.88), rgba(31, 182, 166, 0.78)),
-        #eef2ff;
+        linear-gradient(135deg, rgba(48, 32, 216, 0.88), rgba(22, 184, 166, 0.78)),
+        #111516;
     color: #ffffff;
     display: flex;
     font-size: 48px;
@@ -340,7 +340,7 @@ input[type="range"] {
 }
 
 .history-item {
-    background: #ffffff;
+    background: rgba(18, 21, 22, 0.74);
     border: 1px solid var(--border);
     border-radius: 14px;
     margin-bottom: 10px;
@@ -357,7 +357,7 @@ input[type="range"] {
     padding: 6px 10px;
 }
 
-.mood-tag.feliz { background: rgba(34, 197, 94, 0.14); color: #15803d; }
+.mood-tag.feliz { background: rgba(34, 197, 94, 0.14); color: #7cf3a3; }
 .mood-tag.neutro { background: rgba(100, 116, 139, 0.14); color: #475569; }
 .mood-tag.triste { background: rgba(59, 130, 246, 0.14); color: #2563eb; }
 .mood-tag.ansioso { background: rgba(246, 166, 35, 0.18); color: #a16207; }
@@ -369,7 +369,7 @@ input[type="range"] {
 }
 
 .form-group input:disabled {
-    background: #f1f5f9;
+    background: rgba(39, 51, 64, 0.42);
     color: var(--muted);
 }
 
@@ -378,17 +378,17 @@ input[type="range"] {
 }
 
 .plan-card.premium {
-    background: linear-gradient(145deg, rgba(109, 93, 252, 0.12), rgba(255, 255, 255, 0.92));
-    border-color: rgba(109, 93, 252, 0.24);
+    background: linear-gradient(145deg, rgba(48, 32, 216, 0.18), rgba(20, 23, 24, 0.88));
+    border-color: rgba(96, 86, 255, 0.24);
 }
 
 .plan-card.free {
-    background: linear-gradient(145deg, rgba(31, 182, 166, 0.10), rgba(255, 255, 255, 0.92));
+    background: linear-gradient(145deg, rgba(22, 184, 166, 0.12), rgba(20, 23, 24, 0.88));
 }
 
 .plan-badge {
     align-self: flex-start;
-    background: #ffffff;
+    background: rgba(18, 21, 22, 0.78);
     border: 1px solid var(--border);
     border-radius: 999px;
     color: var(--primary);
@@ -421,7 +421,7 @@ input[type="range"] {
 .setting-item,
 .stat-item {
     align-items: center;
-    background: #ffffff;
+    background: rgba(18, 21, 22, 0.74);
     border: 1px solid var(--border);
     border-radius: 14px;
     display: flex;
@@ -461,7 +461,7 @@ input[type="range"] {
 }
 
 .login-card {
-    background: rgba(255, 255, 255, 0.88);
+    background: rgba(18, 21, 22, 0.88);
     border: 1px solid var(--border);
     border-radius: 28px;
     box-shadow: var(--shadow);
@@ -497,7 +497,7 @@ input[type="range"] {
 }
 
 .login-tabs {
-    background: #eef2f7;
+    background: rgba(39, 51, 64, 0.48);
     border-radius: 14px;
     display: grid;
     gap: 4px;
@@ -516,9 +516,9 @@ input[type="range"] {
 }
 
 .login-tabs button.active {
-    background: #ffffff;
-    box-shadow: 0 8px 18px rgba(31, 41, 55, 0.08);
-    color: var(--primary);
+    background: rgba(18, 21, 22, 0.92);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.22);
+    color: #70e4d8;
 }
 
 .login-form {
